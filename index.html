@@ -23,7 +23,14 @@ tasks.push(...allTasks);
 
 loadTasks();
 }
-    </script>
+loadFromLocalStorage();
+
+function loadTasks() {
+    localStorage.setItem("allTasks", JSON.stringify(tasks));
+
+    
+}
+</script>
     
 </body>
 </html>
