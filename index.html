@@ -31,7 +31,11 @@ function loadTasks() {
     tasksContainer.innerHTML = "";
     for (const task of tasks) {
     tasksContainer.innerHTML += `
+    <div class="todo-item">
+    ${task}
    
+    </div>
+    `;
 }
 }
 
