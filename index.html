@@ -33,7 +33,9 @@ function loadTasks() {
     tasksContainer.innerHTML += `
     <div class="todo-item">
     ${task}
-   
+    <button class="btn-del" type="button" onclick="deleteTask('${task}')">
+    Delete
+    </button>
     </div>
     `;
 }
